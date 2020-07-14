@@ -1,0 +1,96 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+}    
+
+
+
+.container {
+    background-size: cover;
+    width: 100%;
+    height: 827px;
+
+}
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+}
+
+.nav-brand {
+    margin-left: 29px;
+    margin-top: 19px;
+    height: 45px;
+    width: 141px;
+}
+
+.nav-menu {
+    display: flex;
+    margin: 0 10px;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 46px;
+    margin-right: 31px;
+}
+.nav-menu li a {
+    margin: 0 10px;
+    font-size:16px;
+    font-weight: 800;
+    text-decoration: none;
+    color: white;
+}
+.main-hero{
+    color: white;
+    background-size: cover;
+    width: 100%;
+    height: 827px;
+    background-image: url(../img/Fondo1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main-content {
+    text-align: center;
+}
+
+.main-content h1{
+    font-size: 44px;
+    font-weight: 800;
+}
+
+.main-content p {
+    font-size: 16px;
+}
+hr {
+    width: 90px;
+}
+
+.features {
+    
+    height: 402px;
+    background-color: rebeccapurple;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.features .feature-left {
+    color: #d03b40;
+    background-color:#ded6c0;
+}
+
+.features .feature-right {
+    color: #ded6c0;
+    background-color:#d03b40;
+}
+
+.features .feature-content {
+    height: 100%;
+    text-align: center;
+    display: grid;
+    align-content: center;
+}
+
