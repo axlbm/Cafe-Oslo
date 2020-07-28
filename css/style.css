@@ -1,10 +1,11 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 16px;
     color: white;
 }    
 
-
+/* CONTAINER */
 
 .container {
     background-size: cover;
@@ -12,6 +13,7 @@ body {
     height: 827px;
 
 }
+/* NAV */
 .nav-main {
     display: flex;
     justify-content: space-between;
@@ -41,6 +43,7 @@ body {
     text-decoration: none;
     color: white;
 }
+/* MAIN */
 .main-hero{
     color: white;
     background-size: cover;
@@ -60,16 +63,20 @@ body {
 .main-content h1{
     font-size: 44px;
     font-weight: 800;
+    margin-bottom: 30px;
 }
 
 .main-content p {
     font-size: 16px;
+    margin-top: 35px;
 }
 hr {
     width: 90px;
+    border-top: 1px solid white;
 }
 
-.features {
+/* FEATURES */
+.features-container {
     
     height: 402px;
     background-color: rebeccapurple;
@@ -77,20 +84,104 @@ hr {
     grid-template-columns: repeat(2,1fr);
 }
 
-.features .feature-left {
-    color: #d03b40;
-    background-color:#ded6c0;
-}
-
-.features .feature-right {
+.features-container .feature-left {
     color: #ded6c0;
     background-color:#d03b40;
 }
 
-.features .feature-content {
+.features-container .feature-right {
+    color: #d03b40;
+    background-color:#ded6c0;
+}
+
+.features-container .feature-content {
     height: 100%;
     text-align: center;
     display: grid;
     align-content: center;
 }
 
+.feature-content h2 {
+    margin: 0;
+}
+.feature-content p {
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+/* PRODUCTS */
+.products {
+    width: 100%;
+    height: 540px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url(../img/Fondo2.jpg);
+}
+
+.products-container h1 {
+    font-size: 44px;
+    margin: 25px 0;
+}
+.products-container p {
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.btn button {
+    background: transparent;
+    color: white;
+    border: 3px solid white;
+    font-weight: normal;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.description-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  min-width:10px;
+  grid-row-gap: 65px;
+  margin-top: 95px ;
+  margin-bottom: 90px;
+  justify-items: center;
+  /* padding: 40px; */
+  /* min-width: 1180px; */
+}
+.description-content {
+    color:#000;
+    display: flex;
+}
+
+.description-content h3 {
+    font-size: 24px;
+    font-weight: 800;
+    /* display: block; */
+    margin: 0 0 5px 0;
+}
+.description-content p {
+    margin: 0;
+    line-height: 33px;
+    font-size: 14px;
+
+}
+.description-content img {
+    width: 173px;
+    height: 173px;
+}
+
+.text-description {
+    margin-left: 25px;
+}
+
+@media screen and (max-width:1024px) {
+    .description-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+}
+
+/* NECESITO ALGO DEL TAMAÑO DE 512PX PARA EL GRID  */
