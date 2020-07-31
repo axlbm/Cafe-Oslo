@@ -79,7 +79,7 @@ hr {
 .features-container {
     
     height: 402px;
-    background-color: rebeccapurple;
+    /*background-color: rebeccapurple;*/
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
@@ -178,10 +178,48 @@ hr {
     margin-left: 25px;
 }
 
+/*contact section*/
+.contact-container {
+    height: 402px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: red;
+}
+
+.contact-container .contact-left{
+
+    background-color: #ded6c0;
+    color: #d03b40;
+}
+
+.contact-container .contact-right {
+    background-color: #d03b40;
+    color: #ded6c0;
+}
+
+.contact-left,.contact-right {
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+.contact-content h4 {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.contact-content p {
+    font-size: 16px ;
+}
+.contact-content span {
+    font-weight: 800;
+}
+
+ /*media queries section*/
+
 @media screen and (max-width:1024px) {
     .description-container {
         display: grid;
         grid-template-columns: repeat(1,1fr);
+    }
 }
-
-/* NECESITO ALGO DEL TAMAÑO DE 512PX PARA EL GRID  */
